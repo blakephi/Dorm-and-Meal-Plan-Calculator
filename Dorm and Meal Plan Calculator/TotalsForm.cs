@@ -19,5 +19,10 @@ namespace Dorm_and_Meal_Plan_Calculator
             InitializeComponent();
             displayTotal.Text = displayTotal.Text + total.ToString("C");
         }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
