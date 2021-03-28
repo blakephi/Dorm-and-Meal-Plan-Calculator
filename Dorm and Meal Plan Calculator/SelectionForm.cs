@@ -29,7 +29,7 @@ namespace Dorm_and_Meal_Plan_Calculator
 
         private void calculateTotal_Click(object sender, EventArgs e)
         {
-
+            int totalCosts = dormCosts[dormSelection.SelectedIndex] + mealCosts[mealSelection.SelectedIndex];
         }
     }
 }
