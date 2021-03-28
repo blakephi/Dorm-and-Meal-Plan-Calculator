@@ -15,6 +15,7 @@ namespace Dorm_and_Meal_Plan_Calculator
         int total;
         public TotalsForm(int total)
         {
+            this.total = total;
             InitializeComponent();
         }
     }
