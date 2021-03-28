@@ -26,5 +26,10 @@ namespace Dorm_and_Meal_Plan_Calculator
             dormSelection.SelectedIndex = 0;
             mealSelection.SelectedIndex = 0;
         }
+
+        private void calculateTotal_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

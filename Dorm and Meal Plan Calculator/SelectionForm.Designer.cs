@@ -87,6 +87,7 @@ namespace Dorm_and_Meal_Plan_Calculator
             this.calculateTotal.TabIndex = 4;
             this.calculateTotal.Text = "Calculate";
             this.calculateTotal.UseVisualStyleBackColor = true;
+            this.calculateTotal.Click += new System.EventHandler(this.calculateTotal_Click);
             // 
             // SelectionForm
             // 
