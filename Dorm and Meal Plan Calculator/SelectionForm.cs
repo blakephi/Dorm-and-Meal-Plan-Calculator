@@ -17,5 +17,14 @@ namespace Dorm_and_Meal_Plan_Calculator
             InitializeComponent();
         }
 
+
+        int[] dormCosts = { 1500, 1600, 1800, 2500 };
+        int[] mealCosts = { 600, 1200, 1700 };
+
+        private void SelectionForm_Load(object sender, EventArgs e)
+        {
+            dormSelection.SelectedIndex = 0;
+            mealSelection.SelectedIndex = 0;
+        }
     }
 }

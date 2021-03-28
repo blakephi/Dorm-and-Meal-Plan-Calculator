@@ -31,8 +31,9 @@ namespace Dorm_and_Meal_Plan_Calculator
         {
             this.dormSelection = new System.Windows.Forms.ComboBox();
             this.dormLabel = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.mealSelection = new System.Windows.Forms.ComboBox();
             this.mealLabel = new System.Windows.Forms.Label();
+            this.calculateTotal = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // dormSelection
@@ -43,7 +44,7 @@ namespace Dorm_and_Meal_Plan_Calculator
             "Pike Hall - $1,600/semester",
             "Farthing Hall - $1,800/semester",
             "University Suites - $2,500/semester"});
-            this.dormSelection.Location = new System.Drawing.Point(296, 143);
+            this.dormSelection.Location = new System.Drawing.Point(290, 143);
             this.dormSelection.Name = "dormSelection";
             this.dormSelection.Size = new System.Drawing.Size(220, 21);
             this.dormSelection.TabIndex = 0;
@@ -51,42 +52,53 @@ namespace Dorm_and_Meal_Plan_Calculator
             // dormLabel
             // 
             this.dormLabel.AutoSize = true;
-            this.dormLabel.Location = new System.Drawing.Point(293, 127);
+            this.dormLabel.Location = new System.Drawing.Point(287, 127);
             this.dormLabel.Name = "dormLabel";
             this.dormLabel.Size = new System.Drawing.Size(75, 13);
             this.dormLabel.TabIndex = 1;
             this.dormLabel.Text = "Select a dorm:";
             // 
-            // comboBox1
+            // mealSelection
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.mealSelection.FormattingEnabled = true;
+            this.mealSelection.Items.AddRange(new object[] {
             "7 meals per week - $600/semester",
             "14 meals per week - $1,200/semester",
             "Unlimited meals - $1,700/semester"});
-            this.comboBox1.Location = new System.Drawing.Point(296, 271);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(220, 21);
-            this.comboBox1.TabIndex = 2;
+            this.mealSelection.Location = new System.Drawing.Point(290, 271);
+            this.mealSelection.Name = "mealSelection";
+            this.mealSelection.Size = new System.Drawing.Size(220, 21);
+            this.mealSelection.TabIndex = 2;
             // 
             // mealLabel
             // 
             this.mealLabel.AutoSize = true;
-            this.mealLabel.Location = new System.Drawing.Point(293, 255);
+            this.mealLabel.Location = new System.Drawing.Point(287, 255);
             this.mealLabel.Name = "mealLabel";
             this.mealLabel.Size = new System.Drawing.Size(97, 13);
             this.mealLabel.TabIndex = 3;
             this.mealLabel.Text = "Select a meal plan:";
             // 
+            // calculateTotal
+            // 
+            this.calculateTotal.Location = new System.Drawing.Point(363, 415);
+            this.calculateTotal.Name = "calculateTotal";
+            this.calculateTotal.Size = new System.Drawing.Size(75, 23);
+            this.calculateTotal.TabIndex = 4;
+            this.calculateTotal.Text = "Calculate";
+            this.calculateTotal.UseVisualStyleBackColor = true;
+            // 
             // SelectionForm
             // 
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.calculateTotal);
             this.Controls.Add(this.mealLabel);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.mealSelection);
             this.Controls.Add(this.dormLabel);
             this.Controls.Add(this.dormSelection);
             this.Name = "SelectionForm";
             this.Text = "Dorm and Meal Plan Selection";
+            this.Load += new System.EventHandler(this.SelectionForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -97,8 +109,9 @@ namespace Dorm_and_Meal_Plan_Calculator
         private System.Windows.Forms.ComboBox selectDorm;
         private System.Windows.Forms.ComboBox dormSelection;
         private System.Windows.Forms.Label dormLabel;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox mealSelection;
         private System.Windows.Forms.Label mealLabel;
+        private System.Windows.Forms.Button calculateTotal;
     }
 }
 
