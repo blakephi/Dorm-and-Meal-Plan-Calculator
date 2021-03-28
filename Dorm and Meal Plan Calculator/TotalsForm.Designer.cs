@@ -35,6 +35,7 @@ namespace Dorm_and_Meal_Plan_Calculator
             // 
             // displayTotal
             // 
+            this.displayTotal.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.displayTotal.AutoSize = true;
             this.displayTotal.Location = new System.Drawing.Point(339, 219);
             this.displayTotal.Name = "displayTotal";
@@ -44,6 +45,7 @@ namespace Dorm_and_Meal_Plan_Calculator
             // 
             // closeButton
             // 
+            this.closeButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.closeButton.Location = new System.Drawing.Point(363, 415);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(75, 23);
